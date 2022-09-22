@@ -1,7 +1,11 @@
-{% include 'recipes/partials/head.html' %}
-{% load static %}
-<link rel="stylesheet" href="{% static 'recipes/css/style.css' %}">
-
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    {% include 'recipes/partials/head.html' %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'recipes/css/style.css' %}">
+    <title> {% block title %}{% endblock title %} Recipes</title>
+</head>
 <body>
     {% include 'recipes/partials/header.html' %}
     {% include 'recipes/partials/search.html' %}
